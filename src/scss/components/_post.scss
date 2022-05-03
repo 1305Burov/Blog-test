@@ -1,0 +1,51 @@
+.content-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $main_text;
+    &__info {
+        & .info {
+            &__author {
+                margin-right: 10px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 157%;
+            }
+            &__time {
+                position: relative;
+                padding-left: 8px;
+                text-transform: uppercase;
+                color: $secondary_text;
+                &::before {
+                    content: '|';
+                    position: absolute;
+                    left: 0;
+                }
+            }
+            &__tags {
+                margin-top: 12px;
+                font-weight: 400;
+                font-size: 12px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                color: $second_color;
+            }
+            &__comments-counter {
+                position: relative;
+                padding-left: 20px;
+                margin-top: 9px;
+                color: $secondary_text;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 11px;
+                    height: 11px;
+                    background: url('../img/icons/comment-icon.svg') no-repeat;
+                }
+            }
+        }
+    }
+}

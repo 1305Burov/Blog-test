@@ -1,0 +1,19 @@
+.hero {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        border: 1px solid #D7D8D9;
+        border-radius: 6px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    }
+    &__img {
+        max-width: 645px;
+        height: auto;
+        border-radius: 6px 0 0 6px;
+    }
+    &__content {
+        max-width: 500px;
+        height: 300px;
+        padding-left: 32px;
+    }
+}

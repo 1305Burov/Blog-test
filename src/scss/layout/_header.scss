@@ -13,8 +13,10 @@
             }
             &__item {
                 position: relative;
-                margin-right: 30px;
                 cursor: pointer;
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
                 &_droplist {
                     position: relative;
                     padding-right: 20px;
@@ -45,8 +47,9 @@
                         left: 0;
                         max-height: 0;
                         width: max-content;
+                        border-radius: 6px;
                         background-color: $light_bg;
-                        padding: 5px;
+                        padding: 10px;
                         transition: max-height .4s ease-in-out;
                         overflow: hidden;
                     }

@@ -130,6 +130,60 @@
   cursor: pointer;
 }
 
+.content-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #323642;
+}
+
+.content-post__info .info__author {
+  margin-right: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+}
+
+.content-post__info .info__time {
+  position: relative;
+  padding-left: 8px;
+  text-transform: uppercase;
+  color: #889099;
+}
+
+.content-post__info .info__time::before {
+  content: "|";
+  position: absolute;
+  left: 0;
+}
+
+.content-post__info .info__tags {
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: #4cb649;
+}
+
+.content-post__info .info__comments-counter {
+  position: relative;
+  padding-left: 20px;
+  margin-top: 9px;
+  color: #889099;
+}
+
+.content-post__info .info__comments-counter::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 11px;
+  height: 11px;
+  background: url("../img/icons/comment-icon.svg") no-repeat;
+}
+
 *,
 *::before,
 *::after {
@@ -202,6 +256,13 @@ select {
   margin: 0 auto;
 }
 
+.title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 142%;
+  color: #22252e;
+}
+
 .header {
   min-height: 68px;
   margin: 32px 0 20px 0;
@@ -219,8 +280,11 @@ select {
 
 .header__menu .menu__item {
   position: relative;
-  margin-right: 30px;
   cursor: pointer;
+}
+
+.header__menu .menu__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .header__menu .menu__item_droplist {
@@ -255,8 +319,9 @@ select {
   left: 0;
   max-height: 0;
   width: max-content;
+  border-radius: 6px;
   background-color: #fff;
-  padding: 5px;
+  padding: 10px;
   transition: max-height .4s ease-in-out;
   overflow: hidden;
 }
@@ -337,6 +402,26 @@ select {
 .header__buttons .button_outline {
   width: 90px;
   margin-right: 10px;
+}
+
+.hero__wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d7d8d9;
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,.1);
+}
+
+.hero__img {
+  max-width: 645px;
+  height: auto;
+  border-radius: 6px 0 0 6px;
+}
+
+.hero__content {
+  max-width: 500px;
+  height: 300px;
+  padding-left: 32px;
 }
 
 @media (max-width: 575.98px) {
