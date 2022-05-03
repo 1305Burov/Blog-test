@@ -1,4 +1,7 @@
 .posts {
+    &__box {
+        display: flex;
+    }
     &__nav {
         margin-top: 30px;
         padding: 20px 32px 10px 32px; 
@@ -57,7 +60,6 @@
     }
     &__recent {
         max-width: 65%;
-        margin-right: 20px;
     }
     &__post {
         display: flex;

@@ -1,0 +1,81 @@
+.posts-aside {
+    max-width: 35%;
+    margin: 40px 0 70px 20px;
+    padding-left: 60px;
+    color:  $main_text;
+    border-left: 1px solid #EBECED;
+    &__search {
+        position: relative;
+        margin-bottom: 30px;
+        &-input {
+            max-width: 340px;
+            width: 100%;
+            height: 60px;
+            padding: 16px 30px 16px 58px;
+            border: 1px solid #D7D8D9;
+            border-radius: 4px;
+            color: $main_text;
+            &::placeholder {
+                color:  $main_text;
+                font-size: 18px;
+            }
+        }
+        &-button {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 100%;
+            padding: 0 25px;
+            border: 0;
+            background: url('../img/icons/search-icon.svg') center no-repeat;
+            cursor: pointer;
+        }
+    }
+    &__announcments {
+        padding-bottom: 30px;
+        margin-bottom: 32px;
+        border-bottom: 1px solid #EBECED;
+        & .announcments {
+            &__header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 35px;
+            }
+            &__img {
+                margin-right: 20px;
+            }
+            &__item {
+                position: relative;
+                max-width: 330px;
+                padding-left: 10px;
+                font-size: 14px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 8px;
+                    left: 0;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                    background-color: $second_color;
+                }
+                &:not(:last-child) {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+
+    &__banner {
+        margin-bottom: 50px;
+    }
+
+    &__tag-cloud {
+        & .tag-cloud {
+            &__title {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
