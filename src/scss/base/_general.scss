@@ -14,4 +14,11 @@
     font-size: 24px;
     line-height: 142%;
     color: $title_color;
+    &_link {
+        text-decoration: none;
+        color: $title_color;
+        &:visited {
+            color: $secondary_text; /* Цвет посещенной ссылки */
+        }
+    }
 }

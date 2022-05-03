@@ -158,12 +158,22 @@
 }
 
 .content-post__info .info__tags {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 12px;
   font-weight: 400;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: .5px;
   color: #4cb649;
+}
+
+.content-post__info .info__tags>li {
+  margin-right: 5px;
+}
+
+.content-post__info .info__tags>li:not(:last-child)::after {
+  content: ",";
 }
 
 .content-post__info .info__comments-counter {
@@ -261,6 +271,15 @@ select {
   font-size: 24px;
   line-height: 142%;
   color: #22252e;
+}
+
+.title_link {
+  text-decoration: none;
+  color: #22252e;
+}
+
+.title_link:visited {
+  color: #889099;
 }
 
 .header {
@@ -422,6 +441,100 @@ select {
   max-width: 500px;
   height: 300px;
   padding-left: 32px;
+}
+
+.posts__nav {
+  margin-top: 30px;
+  padding: 20px 32px 10px 32px;
+  background-color: #f7f7f7;
+}
+
+.posts__list {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323642;
+}
+
+.posts__item {
+  transition: color .5s ease;
+  cursor: pointer;
+}
+
+.posts__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.posts__item:not(:first-child):hover {
+  color: #3b9638;
+}
+
+.posts__tags {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.posts__tags .tags__list {
+  margin-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.posts__tags .tags__item {
+  margin-bottom: 10px;
+  color: #4cb649;
+  transition: color .5s ease;
+}
+
+.posts__tags .tags__item:hover {
+  color: #3b9638;
+}
+
+.posts__tags .tags__item:not(:last-child) {
+  margin-right: 36px;
+}
+
+.posts__button {
+  width: 260px;
+  margin: 40px auto 45px auto;
+}
+
+.posts__title {
+  margin: 40px 0;
+  font-size: 32px;
+}
+
+.posts__recent {
+  max-width: 65%;
+  margin-right: 20px;
+}
+
+.posts__post {
+  display: flex;
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ebeced;
+}
+
+.posts__content {
+  margin: 0 15px 0 40px;
+}
+
+.posts .info__post {
+  margin-top: 12px;
+}
+
+.posts .info__tags,
+.posts .info__comments-counter {
+  margin: 0;
+}
+
+.posts__image {
+  width: 280px;
+  height: 180px;
 }
 
 @media (max-width: 575.98px) {

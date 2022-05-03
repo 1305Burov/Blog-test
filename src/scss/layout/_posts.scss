@@ -1,0 +1,81 @@
+.posts {
+    &__nav {
+        margin-top: 30px;
+        padding: 20px 32px 10px 32px; 
+        background-color: $second_bg;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $main_text;
+    }
+    &__item {
+        transition: color .5s ease;
+        cursor: pointer;
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+        &:not(:first-child) {
+            &:hover {
+                color: $second_color_hover;
+            }
+        }
+    }
+    &__tags {
+        display: flex;
+        flex: 1 1 auto;
+        & .tags {
+            &__list {
+                margin-left: 40px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            &__item {             
+                margin-bottom: 10px;   
+                color: $second_color;
+                transition: color .5s ease;
+                &:hover {
+                    color: $second_color_hover;
+                }
+                &:not(:last-child) {
+                    margin-right: 36px;
+                }
+            }
+        }
+    }
+    &__button {
+        width: 260px;
+        margin: 40px auto 45px auto;
+    }
+    &__title {
+        margin: 40px 0;
+        font-size: 32px;
+    }
+    &__recent {
+        max-width: 65%;
+        margin-right: 20px;
+    }
+    &__post {
+        display: flex;
+        padding-bottom: 60px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #EBECED;
+    }
+    &__content {
+        margin: 0 15px 0 40px;
+    }
+    & .info__post {
+        margin-top: 12px;
+    }
+    & .info__tags, .info__comments-counter {
+        margin: 0;
+    }
+    &__image {
+        width: 280px;
+        height: 180px;
+    }
+}
