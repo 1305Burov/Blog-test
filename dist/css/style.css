@@ -1090,6 +1090,26 @@ select {
     display: none;
   }
 
+  .header__menu .menu__list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header__menu .menu__item .droplist__item {
+    margin-top: 20px;
+  }
+
+  .header__menu .menu__item .droplist__list {
+    padding: 0;
+    top: 0;
+    left: 125%;
+    z-index: 10000;
+  }
+
+  .header__menu .menu__item_droplist:hover .droplist__list {
+    padding: 20px;
+  }
+
   .hero__wrapper {
     flex-direction: column;
   }
