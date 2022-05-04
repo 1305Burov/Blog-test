@@ -66,20 +66,9 @@
                         text-decoration: none;
                         text-transform: uppercase;
                         color: $main_text;
-                        &::before {
-                            content: '';
-                            position: absolute;
-                            bottom: -6px;
-                            left: 0;
-                            width: 0;
-                            height: 3px;
-                            background-color: $second_color;
-                            transition: width .4s ease;
-                        }
+                        transition: color .5s ease;
                         &:hover {
-                            &::before {
-                                width: 100%;
-                            }
+                            color: $secondary_text;
                         }
                     }
                 }
