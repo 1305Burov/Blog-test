@@ -26,6 +26,9 @@
             &:hover {
                 color: $second_color_hover;
             }
+            &:active {
+                color: $second_color;
+            }
         }
     }
     &__tags {
@@ -43,6 +46,9 @@
                 transition: color .5s ease;
                 &:hover {
                     color: $second_color_hover;
+                }
+                &:active {
+                    color: $second_color;
                 }
                 &:not(:last-child) {
                     margin-right: 36px;
